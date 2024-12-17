@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriguru Dashboard</title>
+    <link rel="stylesheet" href="farmer.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Agriguru Dashboard</h2>
+        <form id="inputForm">
+            <label for="type">Select Type:</label>
+            <select id="type" required>
+                <option value="crop">Crop</option>
+                <option value="fruit">Fruit</option>
+                <option value="both">Both</option>
+            </select>
+            <input type="number" id="potassium" placeholder="Potassium Level (K)" required>
+            <input type="number" id="phosphorus" placeholder="Phosphorus Level (P)" required>
+            <input type="number" id="nitrogen" placeholder="Nitrogen Level (N)" required>
+            <input type="number" id="temperature" placeholder="Temperature (°C)" required>
+            <input type="number" id="rainfall" placeholder="Rainfall (mm)" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="suggestion"></div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
